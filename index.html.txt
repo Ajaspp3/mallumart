@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallu Mart | Coming Soon</title>
+    <style>
+        /* Modern CSS Reset & Variables */
+        :root {
+            --bg-color: #fcfbf9;
+            --text-main: #1e352f;
+            --text-sub: #5c6f68;
+            --accent-orange: #c85a17;
+            --accent-green: #2a5242;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        /* Logo circle styling to match your social profile look */
+        .logo-wrapper {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px auto;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 2px solid rgba(0,0,0,0.02);
+        }
+
+        .logo-wrapper img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            color: var(--accent-green);
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-sub);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background-color: var(--accent-orange);
+            color: white;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(200, 90, 23, 0.2);
+        }
+
+        .slogan {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-size: 1.05rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Divider line */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-orange);
+            margin: 0 auto 30px auto;
+            border-radius: 2px;
+        }
+
+        /* Footer / Contact info */
+        footer {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            margin-top: 20px;
+        }
+
+        /* Smooth animation for page load */
+        .animate {
+            animation: fadeInUp 0.8s ease out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container animate">
+        <div class="logo-wrapper">
+            <img src="logo.jpg" alt="Mallu Mart Logo">
+        </div>
+
+        <h1>Mallu Mart</h1>
+        <div class="brand-name">mallumart.shop</div>
+
+        <div class="coming-soon-badge">Coming Soon</div>
+
+        <div class="divider"></div>
+
+        <p class="slogan">"Sourced Direct. Delivered Fresh."</p>
+        
+        <p class="description">
+            Welcome to Mallu Mart, your trusted direct supply chain for authentic Indian groceries. We source high-quality staples straight from the origin and manage the entire delivery process ourselves to ensure unmatched freshness. Whether you are a local grocery store owner looking for reliable wholesale bulk shipments or a retail customer wanting a taste of home delivered straight to your doorstep, we have you covered.
+        </p>
+
+        <div class="divider"></div>
+
+        <footer>
+            &copy; 2026 Mallu Mart. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
